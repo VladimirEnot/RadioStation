@@ -61,11 +61,11 @@ public class RadioTest {
     @Test
     public void testNormalVolume(){
         Radio radio =new Radio();
-        radio.setCurrentVolume(3);
+        radio.setCurrentVolume(9);
 
         radio.up();
 
-        int expected = 4;
+        int expected = 10;
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected , actual);
 
@@ -93,14 +93,13 @@ public class RadioTest {
     @Test
     public  void testMinnVolume(){
         Radio radio = new Radio();
-        radio.setCurrentVolume(9);
+        radio.setCurrentVolume(1);
         radio.down();
-        int expected = 8;
+        int expected = 0;
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected ,actual);
     }
 
 }
-
 
 
