@@ -30,7 +30,7 @@ public class Radio {
 
     public void down() {
         if (currentVolume != 0) {
-            currentVolume--;
+            currentVolume --;
         } else {
             currentVolume = 0;
         }
@@ -64,4 +64,5 @@ public class Radio {
         }
         this.currentVolume = currentVolume;
     }
+
 }
