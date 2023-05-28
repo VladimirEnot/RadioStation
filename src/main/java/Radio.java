@@ -24,13 +24,13 @@ public class Radio {
         if (currentVolume != 10) {
             currentVolume++;
         } else {
-            currentVolume = 0;
+            currentVolume = 11;
         }
     }
 
     public void down() {
         if (currentVolume != 0) {
-            currentVolume --;
+            currentVolume--;
         } else {
             currentVolume = 0;
         }
