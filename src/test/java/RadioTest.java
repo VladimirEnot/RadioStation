@@ -357,9 +357,9 @@ public class RadioTest {
     public void testRadioConstructor() {
         int stationsCount = 10;
         Radio radio = new Radio(stationsCount);
-        int expectedMaxRadioStation = stationsCount - 1;
-        int actualMaxRadioStation = radio.maxRadioStation;
-        Assertions.assertEquals(expectedMaxRadioStation, actualMaxRadioStation);
+        int expected = stationsCount - 1;
+        int actual = radio.maxRadioStation;
+        Assertions.assertEquals(expected,actual);
     }
 
 
